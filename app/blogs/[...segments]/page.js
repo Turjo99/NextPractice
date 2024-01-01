@@ -1,9 +1,12 @@
-import { log } from "console";
+"use client";
+import { useParams } from "next/navigation";
 import React from "react";
 
-const singleBlog = ({ params }) => {
-  console.log(params);
-  const [year, month] = params.segments;
+const singleBlog = () => {
+  // console.log(params);
+  const params2 = useParams();
+  console.log(params2);
+  const [year, month] = params2.segments;
   return (
     <div>
       Blog from {month}, {year}
