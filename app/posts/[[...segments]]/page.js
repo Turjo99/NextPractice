@@ -1,6 +1,6 @@
 import React from "react";
 
-const singlePost = ({ params }) => {
+const singleBlog = ({ params }) => {
   const [year, id] = params.segments || [];
   console.log(Date());
   return (
@@ -10,4 +10,4 @@ const singlePost = ({ params }) => {
   );
 };
 
-export default singlePost;
+export default singleBlog;
