@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Nav from "./Nav/Nav";
+import Nav from "./Nav/NavBar";
 import Link from "next/link";
 import Card from "./components/Card";
 import Posts from "./components/Posts";
