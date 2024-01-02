@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Nav = () => {
   return (
@@ -26,7 +27,7 @@ const Nav = () => {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <a>Homepage</a>
+              <Link href="/">Home</Link>
             </li>
             <li>
               <a>Portfolio</a>
@@ -38,7 +39,9 @@ const Nav = () => {
         </div>
       </div>
       <div className="navbar-center">
-        <a className="btn btn-ghost text-xl">ZShop</a>
+        <Link href={"/"} className="btn btn-ghost text-xl">
+          ZShop
+        </Link>
       </div>
       <div className="navbar-end">
         <button className="btn btn-ghost btn-circle">
