@@ -3,7 +3,7 @@ import React from "react";
 const singleProduct = ({ product }) => {
   const { id, title, description, price, images } = product;
   const img = images[0];
-  console.log(img);
+  //   console.log(img);
   return (
     <div className="card w-96 bg-base-100 shadow-xl">
       <figure>
