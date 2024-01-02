@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const singleProduct = ({ product }) => {
   const { id, title, description, price, images } = product;
@@ -16,6 +17,9 @@ const singleProduct = ({ product }) => {
         </h2>
         <p>{description}</p>
         <div className="card-actions justify-end">
+          <button className="btn btn-primary">
+            <Link href={`http://localhost:3000/products/${id}`}>Details</Link>
+          </button>
           <button className="btn btn-primary">Update</button>
           <button className="btn btn-primary">Delete</button>
         </div>
