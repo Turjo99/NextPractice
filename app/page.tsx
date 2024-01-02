@@ -1,17 +1,11 @@
-import Image from "next/image";
-import Nav from "./Nav/NavBar";
-import Link from "next/link";
-import Card from "./components/Card";
-import Posts from "./components/Posts";
+import Nav from "@/app/components/Nav";
+import Products from "@/app/components/Products";
 
 export default function Home() {
   return (
     <>
-      <h1>hello</h1>
-      <Link href="/users">Click hereee</Link>
-
-      <Card></Card>
-      <Posts></Posts>
+      <Nav></Nav>
+      <Products></Products>
     </>
   );
 }
